@@ -18,6 +18,8 @@ class Song(Base):
     __tablename__ = 'songs'
     id = Column(Integer, primary_key=True)
     name = Column(VARCHAR)
+    artist = Column(VARCHAR)
+    duration = Column(Integer)
     category = Column(VARCHAR)
     Date_created = Column(Date)
     playlists = relationship('PlaylistSong', back_populates='song')
