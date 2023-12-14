@@ -53,7 +53,7 @@ def add_to_playlist():
     click.echo("Adding a song to playlist...")
     playlist_id = click.prompt('Enter playlist ID')
     song_id = click.prompt('Enter song ID')
-    click.echo(f'The playlist {playlist_id} has added song {song_id} successfully')
+    click.echo(f'The playlist {playlist_id}, has added song {song_id} successfully!')
 
     new_playlist_song = PlaylistSong(playlist_id=playlist_id, song_id=song_id)
     session.add(new_playlist_song)
